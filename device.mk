@@ -1108,3 +1108,9 @@ PRODUCT_VENDOR_PROPERTIES += ro.crypto.metadata_init_delete_all_keys.enabled=tru
 PRODUCT_PACKAGES += \
     extracted-carrierconfig \
     extracted-apns
+
+#Enbale ADB Debug
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.service.adb.enable=1 \
+	persist.service.debuggable=1 \
+	persist.sys.usb.config=mtp,adb
